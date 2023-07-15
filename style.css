@@ -93,5 +93,6 @@ button#btn-send:hover {
   font-weight: bold;
 }
 
-
-
+h1.name {
+  font-size: 25px;
+}

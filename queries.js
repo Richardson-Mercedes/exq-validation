@@ -77,6 +77,7 @@ function renderInformation() {
       <td>Inicio de carrera</td>
       <td>Fin de carrera</td>
       <td>Duración de carrera</td>
+      <td>Enlace a Exq</td>
     </tr>
     <tr>
       <td>${finalResult.nombres}</td>
@@ -90,8 +91,10 @@ function renderInformation() {
       <td>${finalResult.inicio_carrera}</td>
       <td>${finalResult.final_carrera}</td>
       <td>${finalResult.duracion_carrera}</td>
+      <td><a href="exqPage.html?who=${finalResult.exequatur}">Ver Certificado</a></td>
     </tr>
   </table>`;
 
   result_container.innerHTML = table;
+  display_name = finalResult.nombres;
 }
