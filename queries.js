@@ -64,34 +64,37 @@ function renderInformation() {
   //console.log(finalResult);
 
   const table = `
-  <table>
-    <tr class="header-table">
-      <td>Nombres</td>
-      <td>Apellidos</td>
-      <td>Edad</td>
-      <td>Exequátur</td>
-      <td>Propietario</td>
-      <td>Año graduación</td>
-      <td>Universidad</td>
-      <td>Título</td>
-      <td>Inicio de carrera</td>
-      <td>Fin de carrera</td>
-      <td>Duración de carrera</td>
-    </tr>
-    <tr>
-      <td>${finalResult.nombres}</td>
-      <td>${finalResult.apellidos}</td>
-      <td>${finalResult.edad}</td>
-      <td>${finalResult.exequatur}</td>
-      <td>${finalResult.propietario}</td>
-      <td>${finalResult.anio_graduacion}</td>
-      <td>${finalResult.universidad}</td>
-      <td>${finalResult.titulo}</td>
-      <td>${finalResult.inicio_carrera}</td>
-      <td>${finalResult.final_carrera}</td>
-      <td>${finalResult.duracion_carrera}</td>
-    </tr>
-  </table>`;
+  <div class="table">
+    <div class="header-table">
+      <div>Nombres</div>
+      <div>Apellidos</div>
+      <div>Edad</div>
+      <div>Exequátur</div>
+      <div>Propietario</div>
+      <div>Año graduación</div>
+      <div>Universidad</div>
+      <div>Título</div>
+      <div>Inicio de carrera</div>
+      <div>Fin de carrera</div>
+      <div>Duración de carrera</div>
+      <div>Enlace a Exq</div>
+    </div>
+    <div class="results-table">
+      <div>${finalResult.nombres}</div>
+      <div>${finalResult.apellidos}</div>
+      <div>${finalResult.edad}</div>
+      <div>${finalResult.exequatur}</div>
+      <div>${finalResult.propietario}</div>
+      <div>${finalResult.anio_graduacion}</div>
+      <div>${finalResult.universidad}</div>
+      <div>${finalResult.titulo}</div>
+      <div>${finalResult.inicio_carrera}</div>
+      <div>${finalResult.final_carrera}</div>
+      <div>${finalResult.duracion_carrera}</div>
+      <div><a href="exqPage.html?who=${finalResult.exequatur}">Ver Certificado</a></div>
+    </div>
+  </div>`;
 
   result_container.innerHTML = table;
+  display_name = finalResult.nombres;
 }

@@ -1,4 +1,4 @@
-function Persona(nombres, apellidos, edad, exequatur, anio_graduacion, universidad, titulo, inicio_carrera, final_carrera, duracion_carrera) {
+function Persona(nombres, apellidos, edad, exequatur, anio_graduacion, universidad, titulo, inicio_carrera, final_carrera, duracion_carrera, link_exq) {
   this.nombres = nombres;
   this.apellidos = apellidos;
   this.edad = edad;
@@ -10,6 +10,7 @@ function Persona(nombres, apellidos, edad, exequatur, anio_graduacion, universid
   this.inicio_carrera = inicio_carrera;
   this.final_carrera = final_carrera;
   this.duracion_carrera = duracion_carrera;
+  this.link_exq = link_exq;
 }
 
 
