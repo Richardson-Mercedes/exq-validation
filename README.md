@@ -1,4 +1,4 @@
 # exq-validation
 <br>
-#Ver página:
+Ver página:
 https://richardson-mercedes.github.io/exq-validation/
